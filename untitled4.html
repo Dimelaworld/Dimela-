@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Dimela</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff99cc;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #cc0066;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #cc0066;
+        }
+        .order-form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff99cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff6699;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dimela</h1>
+        <p>Handmade Pieces for Gifts</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+    </nav>
+
+    <div class="container">
+        <h2>Order Your Custom Piece</h2>
+        <div class="order-form">
+            <form>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+                
+                <label for="town">Town</label>
+                <input type="text" id="town" name="town" required>
+                
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+                
+                <label for="payment">Preferred Payment Method</label>
+                <input type="text" id="payment" name="payment" required>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
